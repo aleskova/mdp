@@ -809,7 +809,7 @@ h3 > .fa {
 }
 
 #intro {
-	background: #fff url('../img/bg.jpg') no-repeat center center fixed;
+	background: #fff url('../img/bg.png') no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
