@@ -4,6 +4,7 @@
 
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700);
+@import "bourbon";
 
 body {
 	font: 300 15px/1.6 'Raleway', serif, sans-serif;
@@ -458,7 +459,7 @@ h3 > .fa {
 .navbar-custom .nav li.active {
 	background: none;
 	outline: 0;
-	color: #EF4836;
+	color: #FFD700;
 }
 
 .navbar-custom .navbar-brand {
@@ -703,7 +704,7 @@ h3 > .fa {
 }
 
 #footer {
-	background: rgb(189, 99, 99);
+	background: #DAA520;
 	padding: 20px 0;
 	color: #FFF;
 }
@@ -806,13 +807,4 @@ h3 > .fa {
 
 .owl-item img {
 	height: 75px;
-}
-
-#intro {
-	background: #fff url('../img/bg.png') no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	border-bottom:1px #d5d5d5;
 }
