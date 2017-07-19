@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adopt A Furball</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+        body {
+            font-family: Verdana, sans-serif;
+            background-color: #FAF0E6;
+            padding: 20px;
+        }
+        input {
+            border: 2px solid #CCC;
+            color: #34495E;
+            font-size: 14px;
+            padding: 8px 5px;
+            border-radius: 6px;
+        }
+        input[type=submit] {
+            border: 2px solid hotpink;
+            background-color: hotpink;
+        }
+        input[type=submit]:hover {
+            background-color: #FF90C7;
+        }
+        #pet-screen .info span {
+            font-weight: bold;
+        }
+    </style>
+    <script type="text/javascript">
+        var Furball = {
+            init: function() {
+                console.log('hi!');
+                this.bindUIActions();
+            },
+
+            bindUIActions: function() {
+                $('#adopt-screen .adopt-button').click(function(e) {
+                    e.preventDefault();
+                    console.log('you clicked me!');
+                });
+            },
+
+            getAnimal: function() {
+
+            }
+        }
+        $(document).ready(function() {
+            Furball.init();
+        });
+    </script>
+</head>
+<body>
+    <div id="adopt-screen">
+        <form>
+            <label>Name your new buddy!</label>
+            <input type="text" name="name" placeholder="pet name">
+            <input class="adopt-button" type="submit" value="Adopt a furball">
+        </form>
+    </div>
+    <div id="pet-screen">
+        <h1 class="name"></h1>
+        <p class="info">He's a <span class="animal"></span>, who is <span class="age"></span> months old.</p>
+        <p class="warning"></p>
+        <img class="picture" src="">
+    </div>
+</body>
+</html>
